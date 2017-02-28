@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  resources :comments
+  resources :articles
   # get 'welcome/index'
   root 'welcome#index'
+ get 'search', to: 'search#search'
 #   get 'auth/:provider/callback', to: 'sessions#create'
 # 	# get 'auth/:provider/callback', to: 'sessions#create'
 # 	# get 'auth/facbook/callback', to: 'sessions#facbook_signin'
